@@ -37,6 +37,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
+
 .productos{
     width: 940px;
     margin: 0 auto;
@@ -95,7 +96,7 @@ footer{
 }
 
 form{
-    margin: 40px 0;
+    margin: 40px 0 0 20px;
 }
 
 form label, form legend {
@@ -112,8 +113,7 @@ form label, form legend {
 }
 
 .checkbox{
-    margin: 20px 0;
-    
+    margin: 20px 0;    
 }
 
 .enviar{
@@ -254,7 +254,14 @@ td, th{
         position: static;
     }
 
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+    .productos li {
+        width: 100%; /* Establece el ancho del elemento li al 100% del contenedor */
+        margin: 10px 0; /* Añade un poco de margen arriba y abajo para separar los elementos */
+        padding: 30px 20px; /* Ajusta el padding si es necesario */
+        box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el ancho total */
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .productos li{
         width: auto;
     }
 
